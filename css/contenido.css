@@ -1,0 +1,44 @@
+*{
+	
+}
+body{
+	background-color:#0070c0;
+}
+.contenido{
+	margin: auto;
+	min-height: 60px;
+	/*background-color: red;*/
+}
+.sub{
+	min-height: 60px;
+	/*background-color: yellow;*/
+	overflow: hidden;
+}
+.titulo{
+	
+	height: 60px;
+	background-color: #a1d8b1;
+	overflow: hidden;
+}
+h3{
+	padding: 13px;
+	margin: 13px;
+	color: rgb(83,87,90);
+
+	text-transform: uppercase;
+}
+.info{
+	height: 0px;
+	background-color: #60bdaf;
+	overflow: hidden;
+	-webkit-transition: height 0.2s;
+}
+p.info{
+	margin: 20px;
+	text-align: justify;
+	color: black;
+	font-size: 20px;
+}
+.sub:hover .info{
+	height: 180px;
+}

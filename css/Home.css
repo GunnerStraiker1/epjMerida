@@ -1,0 +1,51 @@
+body{
+    background-image: url("../img/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-item{
+  height: 500px !important;
+}
+.carousel-item > img {
+  width: 100%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+}
+
+#promo1{
+  padding-top: 2em;
+  font-size: 170%;
+}
+
+#promo1>h1{
+  font-family: Arial;
+  font-weight: bolder;
+  text-align: center;
+  font-style: italic;
+  font-size: 170%;
+}
+
+.title{
+  font-family: Arial;
+  font-size: 190%;
+  color: #000000;
+}
+
+.actividades, .actividades>img{
+  height: 500px !important;
+  width: 500px !important
+}
+
+@media (max-width: 599px) {
+  .carousel-item{
+    height: 260px !important;
+  }
+
+  #promo1{
+    padding-top: 1em;
+    font-size: 150%;
+  }
+}

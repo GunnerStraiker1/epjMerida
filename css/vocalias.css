@@ -1,0 +1,21 @@
+.contenido{
+	/*background-color: rgb(204,204,204);*/
+	background-image: url("../img/sky.jpg");
+	border: 1px red solid;
+	text-align: center;
+	padding-top: 15px;
+	overflow: hidden;
+}
+img{
+	border-radius: 90px;
+}
+.contenido p{
+	padding: 13px;
+	font-size: 20px;
+	background-color: rgba(96,189,175,.6);
+	color: #455655;
+}
+.contenido a{
+	text-decoration: none;
+	color: #455655;
+}

@@ -1,0 +1,79 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+		background-image: url("../img/sky.jpg");
+}
+.caja3{
+	/*border: 1px red solid;*/
+	background-color: rgba(96,189,175,.6);
+	margin: auto;
+	text-align: center;
+}
+.caja3 table{
+	margin: auto;
+}
+.derecha{
+	text-align: right;
+	padding-right: 5px;
+}
+.tabla{
+	/*border: 1px red solid;*/
+	background-color: #a0bec7;
+	width: 700px;
+	margin: auto;
+}
+
+.tabla table{
+	width: 500px;
+	margin: auto;
+}
+.tabla label{
+	color: #455655;
+}
+.tabla input{
+	color: #455655;
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+}
+.tabla td{
+	padding: 5px;
+}
+.centro{
+	margin: auto;
+	text-align: center;
+}
+
+.cajitas{
+	margin: auto;
+	text-align: center;
+	color: #455655;
+	width: 350px;
+	height: 30px;
+	font-size: 20px;
+	border: 0px;
+	background-color:#e9e9e9;
+}
+.caja3 label{
+	color: #455655;
+	font-size: 20px;
+}
+.caja3 th{
+	padding: 5px;
+}
+.caja3 td{
+	padding: 5px;
+}
+.boton{
+	color: #e9e9e9;
+	width: 350px;
+	height: 30px;
+	font-size: 20px;
+	border: 0px;
+	background-color:#455655;
+}
+.blanco{
+	background-color:#e9e9e9;
+}

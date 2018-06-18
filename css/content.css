@@ -1,0 +1,109 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	/*background-color: #60bdaf;*/
+	background-image: url("../img/fondo2.jpg");
+}
+.menu{
+	clear: both;
+	padding-top: 5px;
+	border: 1px red solid;
+	height: 38px;
+	background-color: white;
+	width: 100%;
+  	position: fixed;
+  	z-index: 100;
+}
+.menu a{
+	margin-right: 20px;
+	float: right;
+	border: 1px yellow solid;
+	text-decoration: none;
+	padding: 6px;
+	color:#455655;
+	background-color: #f88aaf;
+}
+.cuerpo{
+	text-align: center;
+	/*height: 700px;*/
+	font-size: 18px;
+	padding-top: 40px;
+	width: 980px;
+	border: 1px blue solid;
+	margin: auto;
+	background-color: rgba(255,255,255,0.6);
+}
+table{
+	text-align: right;
+	margin: auto;
+}
+td{
+	padding: 5px;
+	text-align: right;
+	margin: auto;
+}
+label{
+	padding: 10px;
+	font-size: 22px;
+	color: #455655;
+}
+.cajitas{
+	margin: 3px;
+	width: 400px;
+	font-size: 22px;
+	color: #455655;
+	border: none;
+}
+select{
+	margin: 3px;
+	border: none;
+	color:#455655 ;
+	font-size: 22px;
+}
+.cajita{
+	
+}
+.boton{
+	margin: 3px;
+	width: 400px;
+	font-size: 22px;
+	color: #455655;
+	border: none;
+}
+.cuerpo p{
+
+	font-size: 22px;
+	padding-left: 150px;
+	color: #455655;
+}
+.cuerpo2{
+	height: 700px;
+	font-size: 18px;
+	padding-top: 80px;
+	width: 980px;
+	border: 1px blue solid;
+	margin: auto;
+	background-color: rgba(255,255,255,0.6);
+}
+.cuerpo a{
+	padding: 5px;
+	text-align: center;
+	width: 200px;
+	float: right;
+	border: 1px #455655;
+	text-decoration: none;
+	color:#455655;
+	background-color: #cccccc;
+}
+.cajitas2{
+	margin: 3px;
+	width: 200px;
+	font-size: 22px;
+	color: #455655;
+	border: none;
+}
+h1{
+	text-align: center;
+}

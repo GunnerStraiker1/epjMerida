@@ -3,12 +3,20 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#img-const, #text-const{
+#text-const{
   padding-top: 15em;
   text-align: center;
 }
+
+#img-const{
+  padding-top: 10em;
+}
 @media screen and (max-device-width:720px) {
-  #img-const, #text-const{
+  #img-const{
+    padding-top: 0;
+
+  }
+  #text-const{
     padding-top: 0;
     text-align: center;
   }

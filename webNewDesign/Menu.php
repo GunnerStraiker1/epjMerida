@@ -15,7 +15,7 @@
         <a class="nav-link" href="EnConstruccion.php">Vocalias</a>
       </li>
       <li class="nav-item" id="brand-li">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="Home.php">
           <img src="../img/4.png" alt="" height=90>
         </a>
       </li>

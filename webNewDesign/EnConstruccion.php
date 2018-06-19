@@ -23,6 +23,7 @@
           </div>
           <div class="col-xs-12 col-md-6" id="text-const">
             <h1>¡EN CONSTRUCCIÓN!</h1>
+            <h4>Lo sentimos, esta página aun está en construcción, muy pronto podrás visitarla</h4>
           </div>
         </div>
       </div>

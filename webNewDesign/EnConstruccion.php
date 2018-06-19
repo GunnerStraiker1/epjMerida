@@ -15,12 +15,14 @@
 			include "Menu.php";
 		?>
     <div class="container-flex">
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <img src="../img/imagen-jesus-construyendo.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <h1>¡EN CONSTRUCCIÓN!</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img src="../img/imagen-jesus-construyendo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <h1>¡EN CONSTRUCCIÓN!</h1>
+          </div>
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ body{
 
   .actividades>img{
     height: 100% !important;
-    width: 100%;
-    padding-bottom: 10px;
+    width: 100% !important;
+    padding-bottom: 15px;
   }
 }

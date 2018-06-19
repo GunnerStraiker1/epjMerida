@@ -34,9 +34,9 @@ body{
   color: #000000;
 }
 
-.actividades>img{
-  height: 550px !important;
-  width: 100%;
+.actividades, .actividades>img{
+  height: 500px !important;
+  width: 500px !important
 }
 
 @media (max-width: 599px) {
@@ -47,11 +47,5 @@ body{
   #promo1{
     padding-top: 1em;
     font-size: 150%;
-  }
-
-  .actividades>img{
-    height: 100% !important;
-    width: 100% !important;
-    padding-bottom: 15px;
   }
 }

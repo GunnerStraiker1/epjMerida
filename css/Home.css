@@ -34,10 +34,10 @@ body{
   color: #000000;
 }
 
-/* .actividades, .actividades>img{
+.actividades>img{
   height: 500px !important;
-  width: 500px;
-} */
+  width: 100%;
+}
 
 @media (max-width: 599px) {
   .carousel-item{

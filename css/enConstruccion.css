@@ -13,12 +13,13 @@ body{
 }
 @media screen and (max-device-width:720px) {
   #img-const{
-    padding-top: 0;
-
+    padding-top: 5em !important;
+    padding: 0;
   }
   #text-const{
-    padding-top: 0;
+    padding-top: 4em;
     text-align: center;
+    font-weight: bolder;
   }
 
 }

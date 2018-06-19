@@ -18,7 +18,7 @@ nav{
   padding: 12px 15px !important;
 }
 
-@media (min-device-width: 960px) {
+@media (min-width: 720px) {
   .navbar-nav > li > a {
     padding-top: 26.5px;
     padding-bottom: 26.5px;

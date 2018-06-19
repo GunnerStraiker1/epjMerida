@@ -36,7 +36,7 @@ body{
 
 .actividades, .actividades>img{
   height: 500px !important;
-  width: 500px !important
+  width: 500px;
 }
 
 @media (max-width: 599px) {

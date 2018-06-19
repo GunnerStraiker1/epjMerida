@@ -71,6 +71,18 @@
           </div>
         </div>
       </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>EMPRORALLY 2K18</h1>
+            <h1> <a href="registro-rally.php">¡REGISTRA A TU EQUIPO!</a> </h1>
+          </div>
+
+
+        </div>
+
+      </div>
     </div>
   </body>
   <script type="text/javascript">

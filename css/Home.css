@@ -35,7 +35,7 @@ body{
 }
 
 .actividades>img{
-  height: 500px !important;
+  height: 550px !important;
   width: 100%;
 }
 
@@ -47,5 +47,10 @@ body{
   #promo1{
     padding-top: 1em;
     font-size: 150%;
+  }
+
+  .actividades>img{
+    height: auto !important;
+    width: 100%;
   }
 }

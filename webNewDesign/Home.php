@@ -60,13 +60,13 @@
             Próximas Actividades
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 actividades">
-            <img src="../img/act6.jpg" alt="" class="img-fluid">
+            <img src="../img/act6.jpg" alt="" >
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 actividades">
-            <img src="../img/act4.jpg" alt="" class="img-fluid">
+            <img src="../img/act4.jpg" alt="" >
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 actividades">
-            <img src="../img/act1.jpg" alt="" class="img-fluid">
+            <img src="../img/act1.jpg" alt="" >
           </div>
         </div>
       </div>

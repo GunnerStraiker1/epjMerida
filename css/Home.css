@@ -34,6 +34,15 @@
   width: 500px !important
 }
 
+#registroRally > h1> a{
+  color: #000000;
+   text-shadow: 1px 1px 1px #000000; 
+}
+
+#registroRally > h1> a:hover{
+  color: yellow;
+}
+
 @media (max-width: 599px) {
   .carousel-item{
     height: 260px !important;

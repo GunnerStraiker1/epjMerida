@@ -24,6 +24,15 @@ nav{
   padding: 12px 15px !important;
 }
 
+#footer{
+  text-align: right;
+  color: #ffffff;
+  background-color: #1620ff;
+}
+#devContact{
+  text-align: left;
+}
+
 @media screen and (min-device-width: 721px) {
   .navbar-nav > li > a {
     padding-top: 26.5px;
@@ -60,5 +69,9 @@ nav{
     color: white;
     font-size: 150%;
     font-family: italic;
+  }
+
+  #footer, #devContact{
+    text-align: center !important;
   }
 }

@@ -11,6 +11,10 @@ body{
 #img-const{
   padding-top: 10em;
 }
+
+h1 ,h4 {
+  font-weight: bolder;
+}
 @media screen and (max-device-width:720px) {
   #img-const{
     padding-top: 5em !important;
@@ -19,7 +23,6 @@ body{
   #text-const{
     padding-top: 4em;
     text-align: center;
-    font-weight: bolder;
   }
 
 }

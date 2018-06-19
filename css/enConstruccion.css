@@ -1,0 +1,16 @@
+body{
+    background-image: url("../img/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img-const, #text-const{
+  padding-top: 15em;
+  text-align: center;
+}
+@media screen and (max-device-width:720px) {
+  #img-const, #text-const{
+    padding-top: 0;
+    text-align: center;
+  }
+
+}

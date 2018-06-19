@@ -17,10 +17,10 @@
     <div class="container-flex">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6" id="img-const">
             <img src="../img/imagen-jesus-construyendo.png" alt="" class="img-fluid">
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6" id="text-const">
             <h1>¡EN CONSTRUCCIÓN!</h1>
           </div>
         </div>

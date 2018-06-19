@@ -18,7 +18,7 @@ nav{
   padding: 12px 15px !important;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 761px) {
   .navbar-nav > li > a {
     padding-top: 26.5px;
     padding-bottom: 26.5px;
@@ -42,7 +42,7 @@ nav{
     padding: 0 !important;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 760px) {
   #brand-li{
     width: 0 !important;
     height: 0 !important;

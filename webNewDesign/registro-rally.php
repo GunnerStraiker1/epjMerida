@@ -155,11 +155,6 @@
                     </div>
                   </div>
 
-                  <label class="control-label col-sm-2" for="epj5" style="text-align:right; font-weight:600; font-size:120%">Número de Encuentro:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" id="epj5" placeholder="Número de Encuentro">
-                  </div>
-
                   <label class="control-label col-sm-2" for="tel5" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
                   <div class="col-sm-2">
                     <input type="text" class="form-control" id="tel5" placeholder="Teléfono">

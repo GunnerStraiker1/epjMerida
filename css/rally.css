@@ -1,0 +1,29 @@
+h1{
+  padding-top: 10px;
+  font-weight: 600;
+}
+form{
+  padding-top: 30px;
+}
+
+.checkbox > label{
+  font-size: 130%;
+}
+
+.form-group > .row{
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 720px){
+  label{
+    text-align: left !important;
+  }
+  .form-group > .row{
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px black solid;
+  }
+}

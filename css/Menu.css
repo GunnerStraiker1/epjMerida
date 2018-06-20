@@ -29,8 +29,12 @@ nav{
   color: #ffffff;
   background-color: #1620ff;
 }
+#contact > h5, #contact> h6{
+  font-weight:600;
+}
 #devContact{
   text-align: left;
+  font-style: italic;
 }
 
 @media screen and (min-device-width: 721px) {
@@ -66,9 +70,14 @@ nav{
   }
 
   .nav-link{
-    color: white;
+    color: white !important;
     font-size: 150%;
     font-family: italic;
+    font-weight: 600 !important;
+  }
+
+  .nav-link:hover{
+    color: #000000 !important;
   }
 
   #footer, #devContact{

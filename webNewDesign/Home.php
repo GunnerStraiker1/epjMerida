@@ -72,7 +72,7 @@
         </div>
       </div>
 
-      <div class="container" style= "padding-top: 20px; padding-bottom:20px">
+      <div class="container" style= "padding-top: 5px; padding-bottom:20px">
         <div class="row">
           <div class="col-sm-12" id="registroRally" style="border: 3px black solid; text-align: center; font-weight:bolder; padding: 0 !important">
             <h1 style="font-weight:900">EMPRORALLY 2K18</h1>
@@ -85,13 +85,14 @@
     </div>
     <div class="container-fluid" id="footer">
       <div class="row">
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6" id="contact">
             <h5>Encuentros de Promoción Juvenil Centro Guias Mérida</h5>
             <h6>Ubicación: Parroquia de Santiago Apóstol</h6>
             <h6>Mérida, Yucatán, México</h6>
           </div>
           <div class="col-sm-12 col-md-6" id="devContact">
-            <h6>Web page created by Aktan Technology</h6>
+            <h6></h6>
+            <h6>Webpage created by Aktan Technology</h6>
             <h6>Mérida, Yucatán, México</h6>
           </div>
         </div>

@@ -8,7 +8,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav nav-fill w-100 align-items-start">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="EnConstruccion.php">Conocenos</a>
       </li>
       <li class="nav-item">
@@ -23,7 +23,7 @@
         <a class="nav-link" href="EnConstruccion.php">Actividades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
+        <a class="nav-link" href="EnConstruccion.php">Contacto</a>
       </li>
     </ul>
   </div>

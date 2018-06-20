@@ -31,12 +31,13 @@
 
 .actividades, .actividades>img{
   height: 500px !important;
-  width: 500px !important
+  width: 500px !important;
+  padding-bottom: 15px;
 }
 
 #registroRally > h1> a{
   color: #000000;
-   text-shadow: 1px 1px 1px #000000; 
+   text-shadow: 1px 1px 1px #000000;
 }
 
 #registroRally > h1> a:hover{

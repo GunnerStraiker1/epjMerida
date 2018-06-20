@@ -41,7 +41,7 @@
 }
 
 #registroRally > h1> a:hover{
-  color: yellow;
+  color: blue;
 }
 
 @media (max-width: 599px) {

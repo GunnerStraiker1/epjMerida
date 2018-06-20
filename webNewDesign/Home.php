@@ -55,6 +55,15 @@
         </div>
       </div>
 
+      <div class="container" style= "padding-top: 5px; padding-bottom:20px">
+        <div class="row" style="background-color:yellow">
+          <div class="col-sm-12" id="registroRally" style="border: 3px black solid; text-align: center; font-weight:bolder; padding: 0 !important">
+            <h1 style="font-weight:800">¡EMPRORALLY 2K18!</h1>
+            <h1> <a href="registro-rally.php">¡REGISTRA A TU EQUIPO AQUÍ!</a> </h1>
+          </div>
+        </div>
+      </div>
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 col-sm-12 title">
@@ -71,16 +80,6 @@
           </div>
         </div>
       </div>
-
-      <div class="container" style= "padding-top: 5px; padding-bottom:20px">
-        <div class="row">
-          <div class="col-sm-12" id="registroRally" style="border: 3px black solid; text-align: center; font-weight:bolder; padding: 0 !important">
-            <h1 style="font-weight:900">EMPRORALLY 2K18</h1>
-            <h1> <a href="registro-rally.php">¡REGISTRA A TU EQUIPO AQUÍ!</a> </h1>
-          </div>
-        </div>
-      </div>
-
 
     </div>
     <div class="container-fluid" id="footer">

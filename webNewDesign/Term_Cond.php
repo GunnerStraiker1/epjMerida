@@ -20,10 +20,10 @@
         <div class="container-fluid">
             <h2 class="text-center">Términos y Condiciones del EmproRally 2K18</h2>
             <p class="text-justify">
-              Al acceder y leer el siguiente documento, usted acepta y accede a estar obligado por los términos y 
-              disposiciones de este acuerdo. Asimismo, al ser parte de este evento, usted estará sujeto a toda regla o 
-              guía de uso correspondiente que se haya publicado para dichos evento. Toda participación en este evento 
-              constituirá la aceptación de este acuerdo. Si no acepta cumplir con lo anterior, por favor, no prosiga 
+              Al acceder y leer el siguiente documento, usted acepta y accede a estar obligado por los términos y
+              disposiciones de este acuerdo. Asimismo, al ser parte de este evento, usted estará sujeto a toda regla o
+              guía de uso correspondiente que se haya publicado para dichos evento. Toda participación en este evento
+              constituirá la aceptación de este acuerdo. Si no acepta cumplir con lo anterior, por favor, no prosiga
               con el registro.
             </p>
             <h4 class="text-lg font-weight-bold">Aspecto del uso de automóviles</h4>
@@ -42,11 +42,11 @@
             </p>
             <h4 class="text-lg font-weight-bold">Requisitos previos al registro del equipo</h4>
             <p>
-              La cuota de inscripción es de $100.00 MXN. Dicho pago es único y no reembolsable, el cual se debe realizar 
+              La cuota de inscripción es de $100.00 MXN. Dicho pago es único y no reembolsable, el cual se debe realizar
               un depósito a la cuenta <u><strong>4766 8406 8279 5294</strong></u>. </br>
               <div class="d-inline-flex">
                 <div class="text-right alert alert-warning" role="alert">
-                    <em>La cuenta es parte del servicio <strong>Saldazo</strong> de Oxxo, por lo cual el depósito puede realizarse 
+                    <em>La cuenta es parte del servicio <strong>Saldazo</strong> de Oxxo, por lo cual el depósito puede realizarse
                     en cualquier establecimiento Oxxo.</em>
                 </div>
               </div>
@@ -57,18 +57,18 @@
             <h4 class="text-lg font-weight-bold">Registro</h4>
             <p>
               Una vez cerciorada y validada la información dada, continúe con el registro del equipo en esta <a href="registro-rally.php">SECCIÓN</a>.</br>
-              Ingresar los siguientes datos correctamente: <strong>Nombre del equipo, Nombre completo de los integrantes, Número celular, 
-              Encuentro al que pertenecen y Correo electrónico.</strong> Tomar en cuenta la selección del integrante que va a ser el capitán del equipo, 
-              ya que una vez guardado el registro, se enviará un correo electrónico al capitán seleccionado para confirmar el registro.</br> 
+              Ingresar los siguientes datos correctamente: <strong>Nombre del equipo, Nombre completo de los integrantes, Número celular,
+              Encuentro al que pertenecen y Correo electrónico.</strong> Tomar en cuenta la selección del integrante que va a ser el capitán del equipo,
+              ya que una vez guardado el registro, se enviará un correo electrónico al capitán seleccionado para confirmar el registro.</br>
             </p>
             <p>
               Al final de la sección, se deben anexar las fotografías de las dos licencias de conducir y el Boucher del pago de la inscripción.
             </p>
             <p>
               <a href="../Términos y Condiciones.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">
-                <span style="color: #DD7C38;"><strong>Descargar archivo</strong></span>
+                <span style="color: #ffffff; text-shadow: #000000"><strong>Descargar archivo</strong></span>
                 <img src="../img/dpdf.png" width="5%" height="auto" id="pdf"/>
-              </a>      
+              </a>
             </p>
         </div>
     </div>

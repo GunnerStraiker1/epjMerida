@@ -11,6 +11,26 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
 </head>
   <body>
     <?php include 'Menu.php'; ?>
@@ -18,9 +38,13 @@
       <div class="row">
         <div class="col-sm-12">
           <h1 style="text-align:center">REGISTRO DE EQUIPOS</h1>
+          <div class="alert alert-warning text-center" role="alert">
+            Antes de llenar el registro es indispensable que leas los 
+            <a href="Term_Cond.php" class="alert-link">Términos y Condiciones.</a>
+          </div>
         </div>
       </div>
-        <form class="form-horizontal" action="" method="post">
+        <form class="form-horizontal needs-validation" action="" method="post" novalidate>
             <div class="form-group">
               <div class="row">
               <label class="control-label col-sm-2" for="nameTeam" style="text-align:right; font-weight:600; font-size:120%">Nombre del Equipo:</label>
@@ -155,6 +179,11 @@
                     </div>
                   </div>
 
+                  <label class="control-label col-sm-2" for="epj5" style="text-align:right; font-weight:600; font-size:120%">Número de Encuentro:</label>
+                  <div class="col-sm-2">
+                    <input type="text" class="form-control" id="epj5" placeholder="Número de Encuentro">
+                  </div>
+
                   <label class="control-label col-sm-2" for="tel5" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
                   <div class="col-sm-2">
                     <input type="text" class="form-control" id="tel5" placeholder="Teléfono">
@@ -166,6 +195,21 @@
                   </div>
               </div>
             <!--Fin del grupo de datos  -->
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input col-sm-2" type="checkbox" value="" id="invalidCheck" required>
+              <label class="control-label col-sm-4" for="invalidCheck">
+                He leído y acepto los términos y condiciones.
+              </label>
+              <div class="invalid-feedback col-sm-4">
+                Debes aceptar antes de enviar.
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-primary" onclick="location.href='Home.php';" style="margin: 24px 8px;">Regresar</button>
+              <button type="submit" class="btn btn-primary" style="margin: 24px 8px;">Enviar</button>
           </div>
         </div>
         </form>

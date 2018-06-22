@@ -56,7 +56,7 @@
             </p>
             <h4 class="text-lg font-weight-bold">Registro</h4>
             <p>
-              Una vez cerciorada y validada la información dada, continúe con el registro del equipo en esta <a href="registro-rally.php">sección</a>.</br>
+              Una vez cerciorada y validada la información dada, continúe con el registro del equipo en esta <a href="registro-rally.php">SECCIÓN</a>.</br>
               Ingresar los siguientes datos correctamente: <strong>Nombre del equipo, Nombre completo de los integrantes, Número celular, 
               Encuentro al que pertenecen y Correo electrónico.</strong> Tomar en cuenta la selección del integrante que va a ser el capitán del equipo, 
               ya que una vez guardado el registro, se enviará un correo electrónico al capitán seleccionado para confirmar el registro.</br> 

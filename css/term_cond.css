@@ -1,0 +1,20 @@
+body{
+    color: #473599;
+}
+
+h2{
+    margin: 16px 0;
+}
+
+h3{
+    margin: 8px 0;
+}
+
+h2,h3,h4{
+    color: #496BA6;
+}
+
+a:hover{
+    color: #FBA05F;
+    text-decoration: #FBA05F;
+}

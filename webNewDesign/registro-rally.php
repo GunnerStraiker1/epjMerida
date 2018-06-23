@@ -203,7 +203,7 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <label for="terminos" style="text-align:center; font-weight:700; font-size:140%">El equipo ha leido los términos, condiciones y reglamento del emprorally y todos lo aceptamos.</label>
+                <label for="terminos" style="text-align:center; font-weight:600; font-size:120%">El equipo ha leido los términos, condiciones y reglamento del emprorally y todos lo aceptamos.</label>
                 <input  type="checkbox" id="terminos" name="terminos">
               </div>
             </div>

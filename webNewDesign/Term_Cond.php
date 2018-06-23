@@ -17,7 +17,7 @@
   ?>
   <body>
     <div class="container">
-        <div class="container-fluid">
+        <div class="container-flex">
             <h2 class="text-center">Términos y Condiciones del EmproRally 2K18</h2>
             <p class="text-justify">
               Al acceder y leer el siguiente documento, usted acepta y accede a estar obligado por los términos y
@@ -66,7 +66,7 @@
             </p>
             <p>
               <a href="../Términos y Condiciones.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">
-                <span style="color: #ffffff; text-shadow: #000000"><strong>Descargar archivo</strong></span>
+                <span style="color: #ffffff; text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000"><strong>Descargar archivo</strong></span>
                 <img src="../img/dpdf.png" width="5%" height="auto" id="pdf"/>
               </a>
             </p>

@@ -13,23 +13,23 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
+    // (function() {
+    //   'use strict';
+    //   window.addEventListener('load', function() {
+    //     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    //     var forms = document.getElementsByClassName('needs-validation');
+    //     // Loop over them and prevent submission
+    //     var validation = Array.prototype.filter.call(forms, function(form) {
+    //       form.addEventListener('submit', function(event) {
+    //         if (form.checkValidity() === false) {
+    //           event.preventDefault();
+    //           event.stopPropagation();
+    //         }
+    //         form.classList.add('was-validated');
+    //       }, false);
+    //     });
+    //   }, false);
+    // })();
   </script>
 </head>
   <body>
@@ -39,7 +39,7 @@
         <div class="col-sm-12">
           <h1 style="text-align:center">REGISTRO DE EQUIPOS</h1>
           <div class="alert alert-warning text-center" role="alert">
-            Antes de llenar el registro es indispensable que leas los 
+            Antes de llenar el registro es indispensable que leas los
             <a href="Term_Cond.php" class="alert-link">Términos y Condiciones.</a>
           </div>
         </div>
@@ -195,8 +195,25 @@
                   </div>
               </div>
             <!--Fin del grupo de datos  -->
+            <div class="row">
+              <label for="archivos" class="col-sm-2" style="text-align:right; font-weight:600; font-size:120%">Adjuntar un archivo</label>
+              <div class="col-sm-offset-2 col-sm-6">
+                <input multiple="true" type="file" id="archivos" name="archivo[]">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <label for="terminos" style="text-align:center; font-weight:700; font-size:140%">El equipo ha leido los términos, condiciones y reglamento del emprorally y todos lo aceptamos.</label>
+                <input  type="checkbox" id="terminos" name="terminos">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12" style="text-align:center">
+                <input type="button" class="btn btn-secondary btn-lg" value="Enviar" aria-label="Close" name="enviar" onclick="dataValidation()">
+              </div>
+            </div>
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <div class="form-check">
               <input class="form-check-input col-sm-2" type="checkbox" value="" id="invalidCheck" required>
               <label class="control-label col-sm-4" for="invalidCheck">
@@ -211,7 +228,7 @@
               <button type="button" class="btn btn-primary" onclick="location.href='Home.php';" style="margin: 24px 8px;">Regresar</button>
               <button type="submit" class="btn btn-primary" style="margin: 24px 8px;">Enviar</button>
           </div>
-        </div>
+        </div> -->
         </form>
       </div>
   </body>

@@ -65,7 +65,7 @@
               Al final de la sección, se deben anexar las fotografías de las dos licencias de conducir y el Boucher del pago de la inscripción.
             </p>
             <p>
-              <a href="../Términos y Condiciones.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">
+              <a href="../media/Términos y Condiciones.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">
                 <span style="color: #ffffff; text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000"><strong>Descargar archivo</strong></span>
                 <img src="../img/dpdf.png" width="5%" height="auto" id="pdf"/>
               </a>

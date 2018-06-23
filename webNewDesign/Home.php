@@ -59,7 +59,12 @@
         <div class="row" style="background-color:yellow">
           <div class="col-sm-12" id="registroRally" style="border: 3px black solid; text-align: center; font-weight:bolder; padding: 0 !important">
             <h1 style="font-weight:800">¡EMPRORALLY 2K18!</h1>
-            <h1> <a href="registro-rally.php">¡REGISTRA A TU EQUIPO AQUÍ!</a> </h1>
+            <div class="alert alert-warning text-center" role="alert">
+              Antes del registro es indispensable que leas los 
+              <a href="Term_Cond.php" class="alert-link">Términos y Condiciones.</a>
+            </div>
+            <h1> <a href="registro-rally.php" data-toggle="modal" data-target="#modalTerms">¡REGISTRA A TU EQUIPO AQUÍ!</a> </h1>
+            <?php include 'Modal_Terms.php'; ?>
           </div>
         </div>
       </div>

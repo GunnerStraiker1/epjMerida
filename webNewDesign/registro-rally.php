@@ -222,22 +222,22 @@
 
         // Datos del Correo
 
-        $mail->SetFrom('victorox100@gmail.com', utf8_decode("Victor Perera")); //Correo electronico del remitente y nombre(debe coindidir con el username)
-        $mail->AddAddress('victor.perera.rodriguez@gmail.com', utf8_decode("Victor Raul")); //Correo electronico  y nombre del destinatario
-        // $mail->addReplyTo(utf8_decode($correo), utf8_decode($nombre));
+        $mail->SetFrom('victorox100@gmail.com', utf8_decode("Servidor EPJ")); //Correo electronico del remitente y nombre(debe coindidir con el username)
+        $mail->AddAddress('pinelojuancarlos@gmail.com', utf8_decode("Juan Carlos Pinelo")); //Correo electronico  y nombre del destinatario
+        $mail->addReplyTo(utf8_decode($user1[2]), utf8_decode($user1[0]));
 
         $mail->isHTML(true);
         $mail->Subject = utf8_decode(utf8_decode("Registro de Equipo EMPRORALLY 2018")); //Asunto del correo electronico
         $mail->Body = utf8_decode(
           'Datos del Equipo: <br>'
-          .'Nombre del Equipo: '.utf8_decode($teamName).'<br>'
+          .'<b>Nombre del Equipo: '.utf8_decode($teamName).'</b><br>'
           .'<b>Capitán: </b>'.utf8_decode($user1[0]).', tel: '.utf8_decode($user1[1]).', EPJ: '.utf8_decode($user1[3]).'<br>'
           .'Integrante 2: '.utf8_decode($user2[0]).', tel: '.utf8_decode($user2[1]).', EPJ: '.utf8_decode($user2[3]).'<br>'
           .'Integrante 3: '.utf8_decode($user3[0]).', tel: '.utf8_decode($user3[1]).', EPJ: '.utf8_decode($user3[3]).'<br>'
           .'Integrante 4: '.utf8_decode($user4[0]).', tel: '.utf8_decode($user4[1]).', EPJ: '.utf8_decode($user4[3]).'<br>'
           .'Integrante 5: '.utf8_decode($user5[0]).', tel: '.utf8_decode($user5[1]).'<br>'
-          ."<b><i>PROPUESTA DE TEMATICA DE EQUIPO: ".$row[0]."</i></b> <br>"
-          .'Gracias y buen día');
+          ."<b><i>PROPUESTA DE TEMATICA DE EQUIPO: ".$row[0]."</i></b> <br><br>"
+          .'<i>Hola!, soy el servidor EPJ, te recuerdo enviar un mensaje de Confirmación al Capitán del equipo mencionando su temática</i>');
 
           foreach ($_FILES["archivos"]["name"] as $k => $v) {
             $mail->AddAttachment( $_FILES["archivos"]["tmp_name"][$k],'Uploaded file.jpg' );

@@ -212,8 +212,8 @@
         $mail->isSMTP();
         $mail->Host = 'smtp.sendgrid.net'; //'smtp.office365.com'; //Servidor smtp del correo
         $mail->SMTPAuth = true;
-        $mail->Username = 'app100048941@heroku.com'; //Correo electronico del remitente
-        $mail->Password = 'a1oxn9ib1425'; //Constraseña del remitente
+        $mail->Username = getenv('SENDGRID_USERNAME'); //Correo electronico del remitente
+        $mail->Password = getenv('SENDGRID_PASSWORD'); //Constraseña del remitente
 
         $mail->SMTPSecure = 'tls'; //Tipo de seguridad
         $mail->Port = 587; //Puerto del servidor smtp

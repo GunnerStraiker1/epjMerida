@@ -146,7 +146,7 @@
               </div>
             </div>
             <div class="alert alert-warning text-center " role="alert" id="alert">
-              <strong>¡IMPORTANTE! Verifica tus dantos antes de enviar</strong>
+              <strong>¡IMPORTANTE! Verifica tus datos antes de enviar</strong>
             </div>
             <div class="row terms">
               <div class="col-sm-12">

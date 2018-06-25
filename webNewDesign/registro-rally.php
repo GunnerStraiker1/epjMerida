@@ -210,10 +210,10 @@
     $mail = new PHPMailer(true);
     try{
         $mail->isSMTP();
-        $mail->Host = 'smtp.live.com'; //'smtp.office365.com'; //Servidor smtp del correo
+        $mail->Host = 'smtp.gmail.com'; //'smtp.office365.com'; //Servidor smtp del correo
         $mail->SMTPAuth = true;
-        $mail->Username = 'victorcito001@hotmail.com'; //Correo electronico del remitente
-        $mail->Password = 'gunnerstraiker1'; //Constraseña del remitente
+        $mail->Username = 'victorox100@gmail.com'; //Correo electronico del remitente
+        $mail->Password = 'victorcito001'; //Constraseña del remitente
 
         $mail->SMTPSecure = 'tls'; //Tipo de seguridad
         $mail->Port = 587; //Puerto del servidor smtp
@@ -222,8 +222,8 @@
 
         // Datos del Correo
 
-        $mail->SetFrom('victorcito001@hotmail.com', utf8_decode("Victor Perera")); //Correo electronico del remitente y nombre(debe coindidir con el username)
-        $mail->AddAddress('victorcito001@hotmail.com', utf8_decode("Victor Raul")); //Correo electronico  y nombre del destinatario
+        $mail->SetFrom('victorox100@gmail.com', utf8_decode("Victor Perera")); //Correo electronico del remitente y nombre(debe coindidir con el username)
+        $mail->AddAddress('victor.perera.rodriguez@gmail.com', utf8_decode("Victor Raul")); //Correo electronico  y nombre del destinatario
         // $mail->addReplyTo(utf8_decode($correo), utf8_decode($nombre));
 
         $mail->isHTML(true);

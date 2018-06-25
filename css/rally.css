@@ -16,6 +16,16 @@ form{
   padding-bottom: 10px;
 }
 
+#alert{
+  display: block;
+  font-size: 120%;
+}
+
+.terms{
+  font-size: 120%;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 720px){
   label{
     text-align: left !important;
@@ -25,5 +35,8 @@ form{
     padding-top: 10px;
     padding-bottom: 10px;
     border: 2px black solid;
+  }
+  #cont-button{
+    border: 0px !important;
   }
 }

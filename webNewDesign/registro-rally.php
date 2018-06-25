@@ -11,223 +11,281 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-    // (function() {
-    //   'use strict';
-    //   window.addEventListener('load', function() {
-    //     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    //     var forms = document.getElementsByClassName('needs-validation');
-    //     // Loop over them and prevent submission
-    //     var validation = Array.prototype.filter.call(forms, function(form) {
-    //       form.addEventListener('submit', function(event) {
-    //         if (form.checkValidity() === false) {
-    //           event.preventDefault();
-    //           event.stopPropagation();
-    //         }
-    //         form.classList.add('was-validated');
-    //       }, false);
-    //     });
-    //   }, false);
-    // })();
+  <script type="text/javascript">
+
   </script>
 </head>
   <body>
-    <?php 
-      include 'Menu.php';
-    ?>
+    <?php include 'Menu.php'; ?>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
           <h1 style="text-align:center">REGISTRO DE EQUIPOS</h1>
         </div>
       </div>
-        <form class="form-horizontal needs-validation" action="" method="post" novalidate>
+        <form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="myForm" enctype="multipart/form-data">
             <div class="form-group">
               <div class="row">
               <label class="control-label col-sm-2" for="nameTeam" style="text-align:right; font-weight:600; font-size:120%">Nombre del Equipo:</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="nameTeam" placeholder="Ingresa el nombre de tu equipo">
+                <input type="text" class="form-control" id="nameTeam" placeholder="Ingresa el nombre de tu equipo" name="teamName" required >
               </div>
             </div>
           </div>
           <div class="form-group">
             <!--Integrante 1  -->
             <div class="row">
-                <label class="control-label col-sm-2" for="name1" style="text-align:right; font-weight:600; font-size:120%">Nombre del Integrante 1:</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" id="name1" placeholder="Nombre Completo">
-                </div>
-
-                <div class="col-sm-offset-10 col-sm-2">
-                  <div class="checkbox">
-                    <label><input type="radio" name="capitan"> Capitán</label>
-                  </div>
+                <label class="control-label col-sm-2" for="name1" style="text-align:right; font-weight:600; font-size:120%">Nombre del Capitan:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="name1" placeholder="Nombre Completo" name="name1" required>
                 </div>
 
                 <label class="control-label col-sm-2" for="epj1" style="text-align:right; font-weight:600; font-size:120%">Número de Encuentro:</label>
                 <div class="col-sm-2">
-                  <input type="text" class="form-control" id="epj1" placeholder="Número de Encuentro">
+                  <input type="text" class="form-control" id="epj1" placeholder="Número de Encuentro" name="epj1" required>
                 </div>
 
                 <label class="control-label col-sm-2" for="tel1" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
                 <div class="col-sm-2">
-                  <input type="text" class="form-control" id="tel1" placeholder="Teléfono">
+                  <input type="text" class="form-control" id="tel1" placeholder="Teléfono" name="tel1" required>
                 </div>
 
                 <label class="control-label col-sm-2" for="mail1" style="text-align:right; font-weight:600; font-size:120%">Correo Electronico:</label>
                 <div class="col-sm-2">
-                  <input type="email" class="form-control" id="mail1" placeholder="example@mail.com">
+                  <input type="email" class="form-control" id="mail1" placeholder="example@mail.com" name="mail1" required>
                 </div>
             </div>
               <!--Integrante 2  -->
               <div class="row">
                   <label class="control-label col-sm-2" for="name2" style="text-align:right; font-weight:600; font-size:120%">Nombre del Integrante 2:</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" id="name2" placeholder="Nombre Completo">
-                  </div>
-
-                  <div class="col-sm-offset-10 col-sm-2">
-                    <div class="checkbox">
-                      <label><input type="radio" name="capitan"> Capitán</label>
-                    </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name2" placeholder="Nombre Completo" name="name2" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="epj2" style="text-align:right; font-weight:600; font-size:120%">Número de Encuentro:</label>
                   <div class="col-sm-2">
-                    <input type="text" class="form-control" id="epj2" placeholder="Número de Encuentro">
+                    <input type="text" class="form-control" id="epj2" placeholder="Número de Encuentro" name="epj2" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="tel2" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
                   <div class="col-sm-2">
-                    <input type="text" class="form-control" id="tel2" placeholder="Teléfono">
+                    <input type="text" class="form-control" id="tel2" placeholder="Teléfono" name="tel2" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="mail2" style="text-align:right; font-weight:600; font-size:120%">Correo Electronico:</label>
                   <div class="col-sm-2">
-                    <input type="email" class="form-control" id="mail2" placeholder="example@mail.com">
+                    <input type="email" class="form-control" id="mail2" placeholder="example@mail.com" name="mail2" required>
                   </div>
               </div>
               <!--Integrante 3  -->
               <div class="row">
                   <label class="control-label col-sm-2" for="name3" style="text-align:right; font-weight:600; font-size:120%">Nombre del Integrante 3:</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" id="name3" placeholder="Nombre Completo">
-                  </div>
-
-                  <div class="col-sm-offset-10 col-sm-2">
-                    <div class="checkbox">
-                      <label><input type="radio" name="capitan"> Capitán</label>
-                    </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name3" placeholder="Nombre Completo" name="name3" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="epj3" style="text-align:right; font-weight:600; font-size:120%">Número de Encuentro:</label>
                   <div class="col-sm-2">
-                    <input type="text" class="form-control" id="epj3" placeholder="Número de Encuentro">
+                    <input type="text" class="form-control" id="epj3" placeholder="Número de Encuentro" name="epj3" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="tel3" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
                   <div class="col-sm-2">
-                    <input type="text" class="form-control" id="tel3" placeholder="Teléfono">
+                    <input type="text" class="form-control" id="tel3" placeholder="Teléfono" name="tel3" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="mail3" style="text-align:right; font-weight:600; font-size:120%">Correo Electronico:</label>
                   <div class="col-sm-2">
-                    <input type="email" class="form-control" id="mail3" placeholder="example@mail.com">
+                    <input type="email" class="form-control" id="mail3" placeholder="example@mail.com" name="mail3" required>
                   </div>
               </div>
               <!--Integrante 4  -->
               <div class="row">
                   <label class="control-label col-sm-2" for="name4" style="text-align:right; font-weight:600; font-size:120%">Nombre del Integrante 4:</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" id="name4" placeholder="Nombre Completo">
-                  </div>
-
-                  <div class="col-sm-offset-10 col-sm-2">
-                    <div class="checkbox">
-                      <label><input type="radio" name="capitan"> Capitán</label>
-                    </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name4" placeholder="Nombre Completo" name="name4" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="epj4" style="text-align:right; font-weight:600; font-size:120%">Número de Encuentro:</label>
                   <div class="col-sm-2">
-                    <input type="text" class="form-control" id="epj4" placeholder="Número de Encuentro">
+                    <input type="text" class="form-control" id="epj4" placeholder="Número de Encuentro" name="epj4" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="tel4" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
                   <div class="col-sm-2">
-                    <input type="text" class="form-control" id="tel4" placeholder="Teléfono">
+                    <input type="text" class="form-control" id="tel4" placeholder="Teléfono" name="tel4" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="mail4" style="text-align:right; font-weight:600; font-size:120%">Correo Electronico:</label>
                   <div class="col-sm-2">
-                    <input type="email" class="form-control" id="mail4" placeholder="example@mail.com">
+                    <input type="email" class="form-control" id="mail4" placeholder="example@mail.com" name="mail4" required>
                   </div>
               </div>
               <!--Integrante 5  -->
               <div class="row">
                   <label class="control-label col-sm-2" for="name5" style="text-align:right; font-weight:600; font-size:120%">Nombre del Integrante 5:</label>
-                  <div class="col-sm-8">
-                    <input type="text" class="form-control" id="name5" placeholder="Nombre Completo">
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name5" placeholder="Nombre Completo" name="name5" required>
                   </div>
 
-                  <div class="col-sm-offset-10 col-sm-2">
-                    <div class="checkbox">
-                      <label><input type="radio" name="capitan"> Capitán</label>
-                    </div>
-                  </div>
-
-                  <label class="control-label col-sm-2" for="epj5" style="text-align:right; font-weight:600; font-size:120%">Número de Encuentro:</label>
+                  <label class="control-label col-sm-2 offset-sm-4" for="tel5" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
                   <div class="col-sm-2">
-                    <input type="text" class="form-control" id="epj5" placeholder="Número de Encuentro">
-                  </div>
-
-                  <label class="control-label col-sm-2" for="tel5" style="text-align:right; font-weight:600; font-size:120%">Número de Celular:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" id="tel5" placeholder="Teléfono">
+                    <input type="text" class="form-control" id="tel5" placeholder="Teléfono" name="tel5" required>
                   </div>
 
                   <label class="control-label col-sm-2" for="mail5" style="text-align:right; font-weight:600; font-size:120%">Correo Electronico:</label>
                   <div class="col-sm-2">
-                    <input type="email" class="form-control" id="mail5" placeholder="example@mail.com">
+                    <input type="email" class="form-control" id="mail5" placeholder="example@mail.com" name="mail5" required>
                   </div>
               </div>
             <!--Fin del grupo de datos  -->
             <div class="row">
               <label for="archivos" class="col-sm-2" style="text-align:right; font-weight:600; font-size:120%">Adjuntar un archivo</label>
               <div class="col-sm-offset-2 col-sm-6">
-                <input multiple="true" type="file" id="archivos" name="archivo[]">
+                <input multiple="true" type="file" id="archivos" name="archivos[]" required>
               </div>
             </div>
-            <div class="row">
+            <div class="alert alert-warning text-center " role="alert" id="alert">
+              <strong>¡IMPORTANTE! Verifica tus dantos antes de enviar</strong>
+            </div>
+            <div class="row terms">
               <div class="col-sm-12">
-                <label for="terminos" style="text-align:center; font-weight:600; font-size:120%">El equipo ha leido los términos, condiciones y reglamento del emprorally y todos lo aceptamos.</label>
-                <input  type="checkbox" id="terminos" name="terminos">
+                El equipo ha leido los términos, condiciones y reglamento del emprorally y todos lo aceptamos.
+                <input  type="checkbox" id="terminos" name="terminos" required>
               </div>
             </div>
-            <div class="row">
+            <div class="row" id="cont-button">
               <div class="col-sm-12" style="text-align:center">
-                <input type="button" class="btn btn-secondary btn-lg" value="Enviar" aria-label="Close" name="enviar" onclick="dataValidation()">
+                <input type="submit" class="btn btn-secondary btn-lg" value="Enviar" aria-label="Close" name="enviar"">
               </div>
             </div>
           </div>
-          <!-- <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input col-sm-2" type="checkbox" value="" id="invalidCheck" required>
-              <label class="control-label col-sm-4" for="invalidCheck">
-                He leído y acepto los términos y condiciones.
-              </label>
-              <div class="invalid-feedback col-sm-4">
-                Debes aceptar antes de enviar.
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-primary" onclick="location.href='Home.php';" style="margin: 24px 8px;">Regresar</button>
-              <button type="submit" class="btn btn-primary" style="margin: 24px 8px;">Enviar</button>
-          </div>
-        </div> -->
         </form>
       </div>
   </body>
 </html>
+
+<?php
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\Exception;
+  //C:\xampp\htdocs\vendor\phpmailer\phpmailer\src
+  require '../vendor/phpmailer/phpmailer/src/Exception.php';
+  require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+  require '../vendor/phpmailer/phpmailer/src/SMTP.php';
+
+  require '../vendor/autoload.php';
+
+  if (isset($_POST["terminos"])) {
+    $host ="ec2-54-235-252-23.compute-1.amazonaws.com";
+    $port="5432";
+    $dbname="dckm01o8lhgko7";
+    $user="tnvihkzysvzqvq";
+    $password="53ef5e3bcf79392a4e1002850775d739ee7bee462cb2ede4c070dd833c558ae7";
+
+    //$host $port $dbname $user $password
+    $db = pg_connect("postgres://tnvihkzysvzqvq:53ef5e3bcf79392a4e1002850775d739ee7bee462cb2ede4c070dd833c558ae7@ec2-54-235-252-23.compute-1.amazonaws.com:5432/dckm01o8lhgko7");
+    if (!$db) {
+      echo "Error: ".pg_last_error;
+    }
+    $teamName = $_POST["teamName"];
+    $user1 = array($_POST["name1"],$_POST["tel1"],$_POST["mail1"],$_POST["epj1"]);
+    $user2 = array($_POST["name2"],$_POST["tel2"],$_POST["mail2"],$_POST["epj2"]);
+    $user3 = array($_POST["name3"],$_POST["tel3"],$_POST["mail3"],$_POST["epj3"]);
+    $user4 = array($_POST["name4"],$_POST["tel4"],$_POST["mail4"],$_POST["epj4"]);
+    $user5 = array($_POST["name5"],$_POST["tel5"],$_POST["mail5"]);
+    // if (isset($_POST["capitan"])) {
+    //   $capitan = $_POST["capitan"];
+    //   echo "<script>alert('$capitan')</script>";
+    // }
+
+    //Metodo para tomar las tematicas de equipo
+    $row[0]=null;
+    while ($row[0]===null) {
+      $number = rand(1,12);
+      $sqlGetTematic = "SELECT name FROM tematics WHERE id=" .$number."AND selected=false";
+      $rs = pg_query($db, $sqlGetTematic);
+      $row = pg_fetch_row($rs);
+    }
+
+    $mail = new PHPMailer(true);
+    try{
+        $mail->isSMTP();
+        $mail->Host = 'smtp.live.com'; //'smtp.office365.com'; //Servidor smtp del correo
+        $mail->SMTPAuth = true;
+        $mail->Username = 'victorcito001@hotmail.com'; //Correo electronico del remitente
+        $mail->Password = 'gunnerstraiker1'; //Constraseña del remitente
+
+        $mail->SMTPSecure = 'tls'; //Tipo de seguridad
+        $mail->Port = 587; //Puerto del servidor smtp
+
+        //-------------------------------------------------------
+
+        // Datos del Correo
+
+        $mail->SetFrom('victorcito001@hotmail.com', utf8_decode("Victor Perera")); //Correo electronico del remitente y nombre(debe coindidir con el username)
+        $mail->AddAddress('victorcito001@hotmail.com', utf8_decode("Victor Raul")); //Correo electronico  y nombre del destinatario
+        // $mail->addReplyTo(utf8_decode($correo), utf8_decode($nombre));
+
+        $mail->isHTML(true);
+        $mail->Subject = utf8_decode(utf8_decode("Registro de Equipo EMPRORALLY 2018")); //Asunto del correo electronico
+        $mail->Body = utf8_decode(
+          'Datos del Equipo: <br>'
+          .'Nombre del Equipo: '.utf8_decode($teamName).'<br>'
+          .'<b>Capitán: </b>'.utf8_decode($user1[0]).', tel: '.utf8_decode($user1[1]).', EPJ: '.utf8_decode($user1[3]).'<br>'
+          .'Integrante 2: '.utf8_decode($user2[0]).', tel: '.utf8_decode($user2[1]).', EPJ: '.utf8_decode($user2[3]).'<br>'
+          .'Integrante 3: '.utf8_decode($user3[0]).', tel: '.utf8_decode($user3[1]).', EPJ: '.utf8_decode($user3[3]).'<br>'
+          .'Integrante 4: '.utf8_decode($user4[0]).', tel: '.utf8_decode($user4[1]).', EPJ: '.utf8_decode($user4[3]).'<br>'
+          .'Integrante 5: '.utf8_decode($user5[0]).', tel: '.utf8_decode($user5[1]).'<br>'
+          ."<b><i>PROPUESTA DE TEMATICA DE EQUIPO: ".$row[0]."</i></b> <br>"
+          .'Gracias y buen día');
+
+          foreach ($_FILES["archivos"]["name"] as $k => $v) {
+            $mail->AddAttachment( $_FILES["archivos"]["tmp_name"][$k],'Uploaded file.jpg' );
+          }
+        //Envio del mail
+
+        $mail->send();
+
+        //Insertar Equipo en DB
+        $sqlCreateTeam = "INSERT INTO teams (teamname, tematic) VALUES ('".$teamName."','".$row[0]."')";
+        pg_query($db, $sqlCreateTeam);
+
+        //Obtener Id de Equipo para participantes
+        $sqlGetTeam= "SELECT id FROM teams WHERE tematic='".$row[0]."'";
+        $resultGetTeam = pg_query($db,$sqlGetTeam);
+        $rowTeam = pg_fetch_row($resultGetTeam);
+
+        //Integrar participantes a equipos con $rowTeam[0]
+        $sqlUser1 = "INSERT INTO participants (idteam,name,epj,email,phone,iscapitain) VALUES (".$rowTeam[0].",'".$user1[0]."','".$user1[3]."','".$user1[2]."','".$user1[1]."','true')";
+        $sqlUser2 = "INSERT INTO participants (idteam,name,epj,email,phone,iscapitain) VALUES (".$rowTeam[0].",'".$user2[0]."','".$user2[3]."','".$user2[2]."','".$user2[1]."','false')";
+        $sqlUser3 = "INSERT INTO participants (idteam,name,epj,email,phone,iscapitain) VALUES (".$rowTeam[0].",'".$user3[0]."','".$user3[3]."','".$user3[2]."','".$user3[1]."','false')";
+        $sqlUser4 = "INSERT INTO participants (idteam,name,epj,email,phone,iscapitain) VALUES (".$rowTeam[0].",'".$user4[0]."','".$user4[3]."','".$user4[2]."','".$user4[1]."','false')";
+        $sqlUser5 = "INSERT INTO participants (idteam,name,email,phone,iscapitain) VALUES (".$rowTeam[0].",'".$user5[0]."','".$user5[2]."','".$user5[1]."','false')";
+        pg_query($db, $sqlUser1);
+        pg_query($db, $sqlUser2);
+        pg_query($db, $sqlUser3);
+        pg_query($db, $sqlUser4);
+        pg_query($db, $sqlUser5);
+
+        //Cambiar estado de los equipos
+        $sqlChangeEstado = "UPDATE tematics SET selected=true WHERE name='".$row[0]."'";
+        pg_query($db, $sqlChangeEstado);
+
+
+        pg_close($db);
+        echo '<script>
+        alert("Se ha enviado de forma correcta su mensaje");
+        window.location.replace("Home.php")
+            </script>';
+
+    }catch(Exception $e){
+        echo '<script>
+        alert("ERROR: El mensaje no se ha enviado");
+        window.location.replace("Home.php");
+        </script>';
+
+    }
+
+
+  }
+ ?>

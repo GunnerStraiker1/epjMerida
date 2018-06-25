@@ -176,14 +176,10 @@
   require '../vendor/autoload.php';
 
   if (isset($_POST["terminos"])) {
-    $host ="ec2-54-235-252-23.compute-1.amazonaws.com";
-    $port="5432";
-    $dbname="dckm01o8lhgko7";
-    $user="tnvihkzysvzqvq";
-    $password="53ef5e3bcf79392a4e1002850775d739ee7bee462cb2ede4c070dd833c558ae7";
+    $database = getenv('DATABASE_URL');
 
     //$host $port $dbname $user $password
-    $db = pg_connect("postgres://tnvihkzysvzqvq:53ef5e3bcf79392a4e1002850775d739ee7bee462cb2ede4c070dd833c558ae7@ec2-54-235-252-23.compute-1.amazonaws.com:5432/dckm01o8lhgko7");
+    $db = pg_connect($database);
     if (!$db) {
       echo "Error: ".pg_last_error;
     }

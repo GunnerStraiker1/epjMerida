@@ -224,8 +224,8 @@
 
         $mail->SetFrom('victorox100@gmail.com', utf8_decode("Servidor EPJ")); //Correo electronico del remitente y nombre(debe coindidir con el username)
         $mail->AddAddress('pinelojuancarlos@gmail.com', utf8_decode("Juan Carlos Pinelo")); //Correo electronico  y nombre del destinatario
-        $mail->AddAddress('victorox100@gmail.com', utf8_decode("Victor Perera")); //Correo electronico  y nombre del destinatario
-        $mail->AddAddress('endimion_07@hotmail.com', utf8_decode("Javier Balam")); //Correo electronico  y nombre del destinatario
+        $mail->AddCC('victorox100@gmail.com', utf8_decode("Victor Perera")); //Correo electronico  y nombre del destinatario
+        $mail->AddCC('endimion_07@hotmail.com', utf8_decode("Javier Balam")); //Correo electronico  y nombre del destinatario
         $mail->addReplyTo(utf8_decode($user1[2]), utf8_decode($user1[0]));
 
         $mail->isHTML(true);

@@ -44,6 +44,11 @@
   color: blue;
 }
 
+#Rally{
+  height: 700px;
+  width: 100%;
+}
+
 @media (max-width: 599px) {
   .carousel-item{
     height: 260px !important;
@@ -52,5 +57,9 @@
   #promo1{
     padding-top: 1em;
     font-size: 150%;
+  }
+  #Rally{
+    width: 100%;
+    height: 100%;
   }
 }

@@ -287,7 +287,7 @@
     }
     else {
       echo '<script>
-      alert("Upss!, Cupo Máximo de Equipos Alcanzado! <br> Ponte en Contacto con la vocalia de PostEncuentro");
+      alert("Upss!, Cupo Máximo de Equipos Alcanzado!; Ponte en Contacto con la vocalia de PostEncuentro");
       window.location.replace("Home.php");
       </script>';
     }

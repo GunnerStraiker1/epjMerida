@@ -65,7 +65,7 @@
             </div>
             <h1> <a href="registro-rally.php" data-toggle="modal" data-target="#modalTerms">¡REGISTRA A TU EQUIPO AQUÍ!</a> </h1>
             <?php include 'Modal_Terms.php'; ?>
-            <img src="../img/rally.jpg" alt="EMPRORALLY 2018" class="img-fluid">
+            <img src="../img/rally.jpg" alt="EMPRORALLY 2018" width="100%" height="500">
           </div>
         </div>
       </div>

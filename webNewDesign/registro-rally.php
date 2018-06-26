@@ -273,7 +273,7 @@
 
         pg_close($db);
         echo '<script>
-        alert("Se ha enviado de forma correcta su mensaje");
+        alert("Se ha registrado tu inscripcion de forma exitosa \n Espera el correo de confirmación de la vocalía de PostEncuentro en el correo del Capitán del Equipo");
         window.location.replace("Home.php")
             </script>';
 
@@ -287,7 +287,7 @@
     }
     else {
       echo '<script>
-      alert("Upss!, Cupo Máximo de Equipos Alcanzado!; Ponte en Contacto con la vocalia de PostEncuentro");
+      alert("Upss!, Cupo Máximo de Equipos Alcanzado! \n Ponte en Contacto con la vocalia de PostEncuentro");
       window.location.replace("Home.php");
       </script>';
     }

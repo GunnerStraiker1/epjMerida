@@ -189,22 +189,23 @@
     $user3 = array($_POST["name3"],$_POST["tel3"],$_POST["mail3"],$_POST["epj3"]);
     $user4 = array($_POST["name4"],$_POST["tel4"],$_POST["mail4"],$_POST["epj4"]);
     $user5 = array($_POST["name5"],$_POST["tel5"],$_POST["mail5"]);
-    // if (isset($_POST["capitan"])) {
-    //   $capitan = $_POST["capitan"];
-    //   echo "<script>alert('$capitan')</script>";
-    // }
 
     //Metodo para tomar las tematicas de equipo
     $row[0]=null;
-    while ($row[0]===null) {
-      $number = rand(1,12);
-      $sqlGetTematic = "SELECT name FROM tematics WHERE id=" .$number."AND selected=false";
-      $rs = pg_query($db, $sqlGetTematic);
-      $row = pg_fetch_row($rs);
-    }
+    $sqlCount = "SELECT count(*) FROM tematics WHERE selected = false";
+    $resultCount = pg_query($db,$sqlCount);
+    $data = pg_fetch_row($resultCount);
+    $teamsAvailable= $data[0];
+    if ($teamsAvailable > 0) {
+      while ($row[0]===null) {
+        $number = rand(1,12);
+        $sqlGetTematic = "SELECT name FROM tematics WHERE id=" .$number."AND selected=false";
+        $rs = pg_query($db, $sqlGetTematic);
+        $row = pg_fetch_row($rs);
+      }
 
-    $mail = new PHPMailer(true);
-    try{
+      $mail = new PHPMailer(true);
+      try{
         $mail->isSMTP();
         $mail->Host = 'smtp.sendgrid.net'; //'smtp.office365.com'; //Servidor smtp del correo
         $mail->SMTPAuth = true;
@@ -276,14 +277,19 @@
         window.location.replace("Home.php")
             </script>';
 
-    }catch(Exception $e){
-        echo '<script>
-        alert("ERROR: El mensaje no se ha enviado");
-        window.location.replace("Home.php");
-        </script>';
-
+        }
+        catch(Exception $e){
+          echo '<script>
+          alert("ERROR: El mensaje no se ha enviado");
+          window.location.replace("Home.php");
+          </script>';
+        }
     }
-
-
+    else {
+      echo '<script>
+      alert("Upss!, Cupo Máximo de Equipos Alcanzado! <br> Ponte en Contacto con la vocalia de PostEncuentro");
+      window.location.replace("Home.php");
+      </script>';
+    }
   }
  ?>

@@ -198,12 +198,7 @@
     $teamsAvailable= $data[0];
     if ($teamsAvailable > 0) {
       while ($row[0]===null) {
-        if ($user1[0]==='Victor Raul Perera Rodriguez') {
-          $number=4;
-        }
-        else {
-            $number = rand(1,12);
-        }
+        $number = rand(1,12);
         $sqlGetTematic = "SELECT name FROM tematics WHERE id=" .$number."AND selected=false";
         $rs = pg_query($db, $sqlGetTematic);
         $row = pg_fetch_row($rs);

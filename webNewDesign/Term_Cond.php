@@ -65,6 +65,10 @@
               Al final de la sección, se deben anexar las fotografías de las dos licencias de conducir y el Boucher del pago de la inscripción.
             </p>
             <p>
+              <h1 style="font-weight: strong"> ¡IMPORTANTE! Ir caracterizados de acuerdo a la temática asignada</h1>
+              <h1>Punto de Reunión: Parroquia Santiago Apostol a las 6:00pm el día 7 de Julio de 2018</h1>
+            </p>
+            <p>
               <a href="../media/Términos y Condiciones.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">
                 <span style="color: #ffffff; text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000"><strong>Descargar archivo</strong></span>
                 <img src="../img/dpdf.png" width="5%" height="auto" id="pdf"/>

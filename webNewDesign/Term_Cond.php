@@ -67,7 +67,7 @@ patineta, patines, patín del diablo, etc.</li>
             </p>
             <p>
               <h1 style="font-weight: strong"> ¡IMPORTANTE! Ir caracterizados de acuerdo a la temática asignada</h1>
-              <h1>Punto de Reunión: Parroquia Santiago Apostol a las 8:00am el día 7 de Julio de 2018</h1>
+              <h1>Punto de Reunión: Parroquia Santiago Apostol a las 8:00am el día 7 de Julio de 2019</h1>
             </p>
             <p>
               <a href="../media/Bases para Eco Emprorally 2k19.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">

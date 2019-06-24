@@ -174,7 +174,7 @@
   // require '../vendor/phpmailer/phpmailer/src/SMTP.php';
 
   require '../vendor/autoload.php';
-  // require('../vendor/sendgrid/sendgrid/sendgrid-php.php')
+  require('../vendor/sendgrid/sendgrid/sendgrid-php.php')
   
 
   if (isset($_POST["terminos"])) {
@@ -220,9 +220,9 @@
         $sg = new \SendGrid($apiKey)
 
         $response = $sg->client->mail()->send()->post($mail);
-        echo $response->statusCode();
-        echo $response->headers();
-        echo $response->body();
+        // echo $response->statusCode();
+        // echo $response->headers();
+        // echo $response->body();
 
         // $mail->isSMTP();
         // $mail->Host = 'smtp.sendgrid.net'; //'smtp.office365.com'; //Servidor smtp del correo

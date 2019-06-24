@@ -219,10 +219,10 @@
 
         // Datos del Correo
 
-        $mail->From = (getenv('MAILGUN_SMTP_LOGIN')); //Correo electronico del remitente y nombre(debe coindidir con el username)
+        $mail->From = ('victorox100@gmail.com'); //Correo electronico del remitente y nombre(debe coindidir con el username)
         $mail->FromName = 'EPJ-Merida';
-        $mail->addAddress('pinelojuancarlos@gmail.com', utf8_decode("Juan Carlos Pinelo")); //Correo electronico  y nombre del destinatario
-        // $mail->AddBCC('victorox100@gmail.com', utf8_decode("Victor Perera")); //Correo electronico  y nombre del destinatario
+        // $mail->addAddress('pinelojuancarlos@gmail.com', utf8_decode("Juan Carlos Pinelo")); //Correo electronico  y nombre del destinatario
+        $mail->addAddress('victorox100@gmail.com', utf8_decode("Victor Perera")); //Correo electronico  y nombre del destinatario
         // $mail->AddAddress('endimion_07@hotmail.com', utf8_decode("Javier Balam")); //Correo electronico  y nombre del destinatario
         // $mail->addReplyTo(utf8_decode($user1[2]), utf8_decode($user1[0]));
 

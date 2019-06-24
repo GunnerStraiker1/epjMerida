@@ -21,19 +21,19 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="img-fluid" src="../img/timon.jpg" alt="First slide">
+              <img class="img-fluid" src="../img/carousel1.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="img-fluid" src="../img/img3.jpg" alt="Second slide">
+              <img class="img-fluid" src="../img/carousel2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="img-fluid" src="../img/img4.jpg" alt="Third slide">
+              <img class="img-fluid" src="../img/carousel3.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-              <img class="img-fluid" src="../img/img5.jpg" alt="Third slide">
+              <img class="img-fluid" src="../img/carousel4.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-              <img class="img-fluid" src="../img/img6.jpg" alt="Third slide">
+              <img class="img-fluid" src="../img/carousel5.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">

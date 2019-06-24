@@ -18,7 +18,7 @@
   <body>
     <div class="container">
         <div class="container-flex">
-            <h2 class="text-center">Términos y Condiciones del EmproRally 2K18</h2>
+            <h2 class="text-center">Términos y Condiciones del EmproRally 2K19</h2>
             <p class="text-justify">
               Al acceder y leer el siguiente documento, usted acepta y accede a estar obligado por los términos y
               disposiciones de este acuerdo. Asimismo, al ser parte de este evento, usted estará sujeto a toda regla o
@@ -26,24 +26,25 @@
               constituirá la aceptación de este acuerdo. Si no acepta cumplir con lo anterior, por favor, no prosiga
               con el registro.
             </p>
-            <h4 class="text-lg font-weight-bold">Aspecto del uso de automóviles</h4>
+            <h4 class="text-lg font-weight-bold">Bases generales para el Emprorally 2019</h4>
             <p>
               <ul>
-                <li>Seguro del coche.</li>
-                <li>Licencias de conducir vigentes, mínimo dos.</li>
-                <li>Kit de primeros auxilios.</li>
-                <li>Llanta(s) de refacción en buenas condiciones.</li>
+                <!-- <li>Seguro del coche.</li> -->
+                <li>Se visitaran zonas del Decanato 1 (Centro de Mérida)</li>
+                <li>No se podrá utilizar vehículos con motor, es decir, solo se podrá participar caminando, bicicleta,
+patineta, patines, patín del diablo, etc.</li>
+                <!-- <li>Llanta(s) de refacción en buenas condiciones.</li>
                 <li>Llave de cruz.</li>
                 <li>Extintor lleno.</li>
-                <li>Dispositivos portátiles de señalización de peligro homologados, es decir, triángulos.</li>
-                <li>Conos vehiculares.</li>
-                <li>Dos linternas.</li>
+                <li>Dispositivos portátiles de señalización de peligro homologados, es decir, triángulos.</li> -->
+                <li>Equipos de 5 personas</li>
+                <li>Junta informativa: VIERNES 5 de Julio</li>
               </ul>
             </p>
             <h4 class="text-lg font-weight-bold">Requisitos previos al registro del equipo</h4>
             <p>
-              La cuota de inscripción es de $100.00 MXN. Dicho pago es único y no reembolsable, el cual se debe realizar
-              un depósito a la cuenta <u><strong>4766 8406 8279 5294</strong></u>. </br>
+              La cuota de inscripción es de $50.00 MXN. Dicho pago es único y no reembolsable, el cual se debe realizar
+              un depósito a la cuenta <u><strong>4766 8410 9671 4194.</strong></u>. </br>
               <div class="d-inline-flex">
                 <div class="text-right alert alert-warning" role="alert">
                     <em>La cuenta es parte del servicio <strong>Saldazo</strong> de Oxxo, por lo cual el depósito puede realizarse
@@ -52,7 +53,7 @@
               </div>
             </p>
             <p>
-              Los integrantes del equipo deben estar conformados por 4 emproistas y 1 no emproista.
+              Los integrantes del equipo pueden estar conformados por 3 emproistas y 2 no emproista o 4 empristas y 2 no emproistas.
             </p>
             <h4 class="text-lg font-weight-bold">Registro</h4>
             <p>
@@ -66,10 +67,10 @@
             </p>
             <p>
               <h1 style="font-weight: strong"> ¡IMPORTANTE! Ir caracterizados de acuerdo a la temática asignada</h1>
-              <h1>Punto de Reunión: Parroquia Santiago Apostol a las 6:00pm el día 7 de Julio de 2018</h1>
+              <h1>Punto de Reunión: Parroquia Santiago Apostol a las 8:00am el día 7 de Julio de 2018</h1>
             </p>
             <p>
-              <a href="../media/Términos y Condiciones.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">
+              <a href="../media/Bases para Eco Emprorally 2k19.pdf" download="Término-Condiciones-EmproRally" style="color: #FBA05F;">
                 <span style="color: #ffffff; text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000"><strong>Descargar archivo</strong></span>
                 <img src="../img/dpdf.png" width="5%" height="auto" id="pdf"/>
               </a>

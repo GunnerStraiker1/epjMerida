@@ -219,9 +219,9 @@
 
         // Datos del Correo
 
-        $mail->From = ('victorox100@gmail.com'); //Correo electronico del remitente y nombre(debe coindidir con el username)
+        $mail->From = ('app100048941@heroku.com'); //Correo electronico del remitente y nombre(debe coindidir con el username)
         $mail->FromName = 'EPJ-Merida';
-        // $mail->addAddress('pinelojuancarlos@gmail.com', utf8_decode("Juan Carlos Pinelo")); //Correo electronico  y nombre del destinatario
+        $mail->addAddress('pinelojuancarlos@gmail.com', utf8_decode("Juan Carlos Pinelo")); //Correo electronico  y nombre del destinatario
         $mail->addAddress('victorox100@gmail.com', utf8_decode("Victor Perera")); //Correo electronico  y nombre del destinatario
         // $mail->AddAddress('endimion_07@hotmail.com', utf8_decode("Javier Balam")); //Correo electronico  y nombre del destinatario
         // $mail->addReplyTo(utf8_decode($user1[2]), utf8_decode($user1[0]));
@@ -231,7 +231,7 @@
         $mail->Body = utf8_decode(
           'Datos del Equipo: <br>'
           .'<b>Nombre del Equipo: '.utf8_decode($teamName).'</b><br>'
-          .'<b>Capitán: </b>'.utf8_decode($user1[0]).', Telefono: '.utf8_decode($user1[1]).', EPJ: '.utf8_decode($user1[3]).'<br>'
+          .'<b>Capitán: </b>'.utf8_decode($user1[0]).', Telefono: '.utf8_decode($user1[1]).', EPJ: '.utf8_decode($user1[3]).', Email: '.utf8_decode($user1[2]).'<br>'
           .'Integrante 2: '.utf8_decode($user2[0]).', Telefono: '.utf8_decode($user2[1]).', EPJ: '.utf8_decode($user2[3]).'<br>'
           .'Integrante 3: '.utf8_decode($user3[0]).', Telefono: '.utf8_decode($user3[1]).', EPJ: '.utf8_decode($user3[3]).'<br>'
           .'Integrante 4: '.utf8_decode($user4[0]).', Telefono: '.utf8_decode($user4[1]).', EPJ: '.utf8_decode($user4[3]).'<br>'

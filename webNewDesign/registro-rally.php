@@ -207,26 +207,14 @@
       }
 
       $email = new \SendGrid\Mail\Mail();
-      // $from = new SendGrid\Email('EPJ-Merida', getenv('SENDGRID_USERNAME'));
-      // $subject = "Registro de Equipo EMPRORALLY 2019";
-      // $to = new SendGrid\Email(utf8_decode("Juan Carlos Pinelo"),'pinelojuancarlos@gmail.com');
-      // $to = new SendGrid\Email(utf8_decode("Victor Perera"),'victorox100@gmail.com');
-      // $content = new SendGrid\Content("text/html",
-      // "<i>Hola!, soy el servidor EPJ, te recuerdo enviar un mensaje de Confirmación al Capitán del equipo mencionando su temática</i>");
-      // $mail = new SendGrid\Mail($from, $subject, $to, $content);
-
-      // $apiKey = getenv('SENDGRID_API_KEY');
-      // $sg = new \SendGrid($apiKey)
-
-      // $response = $sg->client->mail()->send()->post($mail);
+      $email->setFrom("app100048941@heroku.com", "EPJ-Merida");
+      $email->setSubject("Registro de Equipo EMPRORALLY 2019");
+      $email->addTo("victorox100@gmail.com", "Victor Perera");
+      $email->addContent(
+      "text/html", "<i>Hola!, soy el servidor EPJ, te recuerdo enviar un mensaje de Confirmación al Capitán del equipo mencionando su temática</i>");
+      $sendgrid = new \SendGrid(getenv('API-EPJ-RALLY'));
       try{
 
-        $email->setFrom("app100048941@heroku.com", "EPJ-Merida");
-        $email->setSubject("Registro de Equipo EMPRORALLY 2019");
-        $email->addTo("victorox100@gmail.com", "Victor Perera");
-        $email->addContent(
-        "text/html", "<i>Hola!, soy el servidor EPJ, te recuerdo enviar un mensaje de Confirmación al Capitán del equipo mencionando su temática</i>");
-        $sendgrid = new \SendGrid(getenv('API-EPJ-RALLY'));
         $response = $sendgrid->send($email);
         print $response->statusCode() . "\n";
         print_r($response->headers());
